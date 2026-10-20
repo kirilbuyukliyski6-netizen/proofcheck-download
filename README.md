@@ -4,13 +4,25 @@ Proofcheck сравнява оригинала (PDF, скан, снимка ил
 съмнителните места: числа, дати, имена, термини, оформление и брой страници.
 Всичко се проверява **локално на компютъра** — документите не се качват никъде.
 
-## Windows 10 / 11
+## Windows 10 / 11 — инсталиране с един ред (препоръчително)
 
-**[⬇ Изтегли Proofcheck за Windows](https://github.com/kirilbuyukliyski6-netizen/proofcheck-download/releases/latest/download/Proofcheck-Setup.exe)**
+1. Натиснете клавиша **Windows**, напишете **PowerShell** и натиснете **Enter**.
+2. Копирайте този ред, поставете го в синия прозорец (десен бутон на мишката) и натиснете **Enter**:
 
-1. Отворете изтегления файл `Proofcheck-Setup.exe`.
-2. Ако Windows покаже „Windows protected your PC“: натиснете **More info** → **Run anyway**.
-3. Следвайте инсталатора. Proofcheck се появява на работния плот и в менюто Start.
+```
+irm https://raw.githubusercontent.com/kirilbuyukliyski6-netizen/proofcheck-download/main/install.ps1 | iex
+```
+
+3. След около минута Proofcheck се отваря сам и остава на работния плот и в менюто Start.
+
+Не са нужни администраторски права. Какво прави редът, може да видите във файла
+[install.ps1](install.ps1): сваля инсталатора от тази страница и го инсталира само за вашия потребител.
+
+## Друг начин: изтегляне от браузъра
+
+**[⬇ Изтегли Proofcheck за Windows](https://github.com/kirilbuyukliyski6-netizen/proofcheck-download/releases/latest/download/Proofcheck.msi)**
+
+Ако Windows покаже „Windows защитава компютъра ви“: натиснете **Още информация** → **Изпълни въпреки това**.
 
 Деинсталиране: Settings → Apps → Proofcheck → Uninstall.
 
